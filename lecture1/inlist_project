@@ -21,12 +21,15 @@
   initial_mass = 1.0 ! in Msun units
 
   ! stop when the center mass fraction of h1 drops below this limit
-  xa_central_lower_limit_species(1) = 'h1'
-  xa_central_lower_limit(1) = 1d-2
+  ! xa_central_lower_limit_species(1) = 'h1'
+  ! xa_central_lower_limit(1) = 1d-2
 
   ! select output frequency
   photo_interval = 10
   write_header_frequency = 2
   terminal_interval = 5
+
+  ! stop when Tearth > this value
+  x_ctrl(1) = 330
 
 / ! end of controls namelist
